@@ -1,0 +1,107 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background: url('./assets/Portfolioimage1.jpg') no-repeat center center fixed;
+  background-size: cover;
+  opacity: 0.3; /* Adjust the opacity of the background image */
+  z-index: -1;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1;
+}
+
+h1, h2, p, ul, li, .nav-link {
+  position: relative;
+  z-index: 1;
+  color: black;
+}
+
+c {
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: bold;
+  transition: text-shadow 0.3s ease-in-out;
+}
+
+c:hover {
+  text-shadow: 0 0 10px rgba(0, 255, 255, 1), 0 0 20px rgba(0, 255, 255, 0.8);
+  background: 0 0 15px rgba(0, 255, 255, 0.5); /* Highlight with a cohesive glow */
+  color: white;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.mypic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 20px auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+  border-radius: 15px; /* Curves the corners */
+}
+.logo:hover {
+  filter: drop-shadow(0 0 8px hwb(350 40% 0% / 0.5));
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  font-size: 94%;
+  color: rgba(138, 138, 138, 0.87);
+}
