@@ -3,7 +3,7 @@ import { useState } from 'react'
 // import mypic from './assets/Portfolioimage1.jpg'
 import advofu from './assets/portfoliopictureadvocacyofunderstanding.jpg'
 import './App.css'
-import webisteshowcasingvideo from '/home/hisamu/Downloads/portfolio1-main/src/assets/Untitled design.mp4'
+import webisteshowcasingvideo from './assets/Untitled design.mp4'
 
 
 function App() {
